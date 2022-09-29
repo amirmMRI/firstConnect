@@ -1,0 +1,131 @@
+/* #f6f6f6
+#D8A522
+#2F2F2F
+#B2B2B2 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+.container {
+    position: relative;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 18rem;
+    height: 25rem;
+    background-color: #2f2f2fd3;
+}
+
+.name {
+    position: relative;
+    color: #b2b2b2;
+    font-size: 0.9rem;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.label {
+    padding-bottom: 1px;
+}
+
+.inp {
+    padding-bottom: 2px;
+    outline: none;
+    color: #f6f6f6;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #D8A522;
+}
+
+.container h1 {
+    color: #f6f6f6;
+    margin-bottom: 1rem;
+}
+
+.container h1:hover {
+    color: #D8A522;
+    transition: 0.28s;
+    text-shadow: -2px 2px 9px #8c857a, 0px 0px 1px #b2b2b2;
+}
+
+.name:focus-within .label {
+    transform: translate(-5px, -7px)scale(0.9);
+    transition: 0.3s;
+    color: #f6f6f6;
+}
+
+.sub {
+    margin: 0 auto;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    padding: 0.6rem 0.8rem;
+    color: #f6f6f6;
+    border: solid 1px #D8A522;
+    background-color: #D8A522;
+    display: flex;
+    justify-content: center;
+}
+
+.subsp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.subsp .err404 {
+    font-size: 1rem;
+    display: none;
+}
+
+.sub:hover {
+    background-color: #f6f6f6;
+    color: #e9b226;
+    border: solid 1px #f6f6f6;
+}
+
+.shape {
+    padding: 10rem;
+    background-color: #e9b226;
+    border: #f6f6f6 4x solid;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 2%;
+    opacity: 0.4;
+    transition: 0.4s ease;
+}
+
+.shape:hover {
+    opacity: 1;
+}
+
+.err {
+    color: rgb(233, 62, 62);
+    font-size: 0.6rem;
+    margin-top: 0.6rem;
+}

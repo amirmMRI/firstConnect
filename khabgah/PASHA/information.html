@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Information1</title>
+    <link rel="stylesheet" href="information.css">
+    <link rel="import" href="../ARASH/index.html">
+</head>
+
+<body>
+    <include src="../ARASH/index.html"></include>
+    <div class="shape sh2"></div>
+    <div class="shape sh1"></div>
+    <div class="container">
+
+        <h1>INFORMATION</h1>
+        <form method="POST" class="information">
+            <span class="name">
+            <label for="fname" class="label">FirstName</label><input class="inp" type="text" id="fname">
+            <span class="fnerr err"> </span>
+            </span>
+            <span class="name">
+                <label for="lname" class="label">LastName</label><input type="text" class="inp" id="lname">
+                <span class="lnerr err"></span>
+            </span>
+            <span class="name">
+                <label for="studynumber" class="label">Studynumber</label><input type="text" class="inp" id="studynumber">
+                <span class="stiderr err"></span>
+            </span>
+            <span class="subsp name">
+                <input class="sub" type="submit" value="SUBMIT">
+            <span class="err404 err">user not found</span>
+            </span>
+
+        </form>
+
+    </div>
+
+    <script src="./information.js"></script>
+</body>
+
+</html>
